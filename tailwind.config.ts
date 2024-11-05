@@ -11,6 +11,9 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        'dark-text': "#1c1e2b",
+        'clicked-black': "#282936",
+        'green-teal': "#80cbc4",
       },
     },
   },
