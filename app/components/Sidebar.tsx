@@ -3,7 +3,7 @@ import React from 'react'
 
 const SideBarComponent = () => {
   return (
-    <aside>
+    <aside className="h-[calc(100vh-57px)] flex flex-col justify-between items-center w-[200px]">
       <div>
         <Link href={'/user'}>
           <h3>JobQuest</h3>
@@ -17,6 +17,7 @@ const SideBarComponent = () => {
           </Link>
         </ul>
       </div>
+      <div>Log out</div>
     </aside>
   )
 }

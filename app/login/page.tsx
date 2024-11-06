@@ -14,7 +14,7 @@ export default async function SigninPage({
   } = await supabase.auth.getUser()
 
   if (user) {
-    return redirect('/todos')
+    return redirect('/user')
   }
 
   return (
@@ -28,7 +28,7 @@ export default async function SigninPage({
             <h3 className="text-2xl font-semibold leading-none tracking-tight text-green-teal">
               Login
             </h3>
-            <p className="text-sm text-gray-700">
+            <p className="text-sm text-gray-500">
               Enter your email below to login to your account
             </p>
           </div>
@@ -55,7 +55,7 @@ export default async function SigninPage({
                 />
               </div>
               {searchParams.message && (
-                <div className="text-sm font-medium text-destructive">
+                <div className="text-sm font-medium text-destructive text-red-300">
                   {searchParams.message}
                 </div>
               )}
