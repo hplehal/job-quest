@@ -9,7 +9,8 @@ export default function Home() {
           Are you tired of tracking jobs by using excel sheet? Let us track all
           the jobs we applied to.{' '}
         </p>
-        <Link href={'/sign-in'}>
+
+        <Link href={'/job-list'}>
           <button className="cursor-pointer hover:bg-teal-400  bg-green-teal text-dark-text py-2 px-6 rounded-lg text-xl">
             Get Started
           </button>

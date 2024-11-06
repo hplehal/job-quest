@@ -5,7 +5,7 @@ import { redirect } from 'next/navigation'
 
 import { createClient } from '@/utils/supabase/server'
 
-export async function login(formData: FormData) {
+export async function emailLogin(formData: FormData) {
   const supabase = await createClient()
 
   // type-casting here for convenience
@@ -18,11 +18,12 @@ export async function login(formData: FormData) {
   const { error } = await supabase.auth.signInWithPassword(data)
 
   if (error) {
-    redirect('/error')
+    console.log(error)
+    redirect('/login?message=Error Signing In')
   }
 
-  revalidatePath('/job-list', 'layout')
-  redirect('/job-list')
+  revalidatePath('/', 'layout')
+  redirect('/user')
 }
 
 export async function signup(formData: FormData) {
@@ -38,9 +39,10 @@ export async function signup(formData: FormData) {
   const { error } = await supabase.auth.signUp(data)
 
   if (error) {
-    redirect('/error')
+    console.log(error)
+    redirect('/login?message=Error Signing up')
   }
 
-  revalidatePath('/job-list', 'layout')
-  redirect('/job-list')
+  revalidatePath('/', 'layout')
+  redirect('/user')
 }
