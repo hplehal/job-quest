@@ -1,12 +1,13 @@
 import Link from 'next/link'
+import { signOut } from '../login/actions'
 import React from 'react'
 
 const SideBarComponent = () => {
   return (
-    <aside className="h-[calc(100vh-57px)] flex flex-col justify-between items-center w-[200px]">
+    <aside className="h-svh flex flex-col justify-between bg-dark-text items-center w-[250px]">
       <div>
         <Link href={'/user'}>
-          <h3>JobQuest</h3>
+          <h3 className="text-green-teal text-xl font-medium mb-5">JobQuest</h3>
         </Link>
         <ul>
           <Link href={'/user'}>
@@ -17,7 +18,11 @@ const SideBarComponent = () => {
           </Link>
         </ul>
       </div>
-      <div>Log out</div>
+      <div>
+        <button formAction={signOut} className="cursor-pointer">
+          Log out
+        </button>
+      </div>
     </aside>
   )
 }
