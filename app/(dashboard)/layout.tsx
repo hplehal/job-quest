@@ -16,7 +16,7 @@ const DashboardPage = async ({
       <SideBarComponent />
       <div>
         {user ? (
-          <h2 className="text--foreground font-bold text-3xl">
+          <h2 className="text--foreground font-bold text-3xl p-10">
             Hello! <span className="text-green-teal">{user.email}</span>
           </h2>
         ) : (
