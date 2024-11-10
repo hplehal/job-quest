@@ -12,9 +12,9 @@ const DashboardPage = async ({
     data: { user },
   } = await supabase.auth.getUser()
   return (
-    <div className="flex">
+    <div className="flex w-100vw">
       <SideBarComponent />
-      <div>
+      <div className="w-[calc(100vw-250px)]">
         {user ? (
           <h2 className="text--foreground font-bold text-3xl p-10">
             Hello! <span className="text-green-teal">{user.email}</span>
