@@ -1,6 +1,9 @@
+import OverviewComponent from '@/app/components/Overview'
+
 const JobListPage = () => {
   return (
     <div className="flex">
+      <OverviewComponent />
       <div>
         <table className="bg-dark-text">
           <tr className="mb-5">
