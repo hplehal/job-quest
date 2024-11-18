@@ -1,0 +1,52 @@
+export const jobApplications = [
+  {
+    id: 1,
+    company: 'Google',
+    position: 'Frontend Developer',
+    status: 'Applied', // Possible values: 'Applied', 'Interviewing', 'Offer', 'Rejected'
+    dateApplied: '2024-11-10',
+    location: 'Mountain View, CA',
+    source: 'LinkedIn', // e.g., LinkedIn, company website
+    notes: 'Followed up with recruiter on 2024-11-12.',
+  },
+  {
+    id: 2,
+    company: 'Amazon',
+    position: 'Junior Software Developer',
+    status: 'Interviewing',
+    dateApplied: '2024-11-08',
+    location: 'Seattle, WA',
+    source: 'Indeed',
+    notes: 'Phone interview scheduled for 2024-11-20.',
+  },
+  {
+    id: 3,
+    company: 'Shopify',
+    position: 'React Developer',
+    status: 'Rejected',
+    dateApplied: '2024-10-25',
+    location: 'Toronto, ON',
+    source: 'Company Website',
+    notes: 'Received feedback from recruiter; skills mismatch.',
+  },
+  {
+    id: 4,
+    company: 'Microsoft',
+    position: 'Frontend Engineer',
+    status: 'Offer',
+    dateApplied: '2024-11-01',
+    location: 'Redmond, WA',
+    source: 'Referral',
+    notes: 'Offer accepted on 2024-11-15. Start date: 2024-12-01.',
+  },
+  {
+    id: 5,
+    company: 'Tesla',
+    position: 'Web Developer',
+    status: 'Applied',
+    dateApplied: '2024-11-16',
+    location: 'Palo Alto, CA',
+    source: 'Company Website',
+    notes: 'Pending response from HR.',
+  },
+]
