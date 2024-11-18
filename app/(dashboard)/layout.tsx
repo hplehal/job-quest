@@ -1,6 +1,7 @@
 import React from 'react'
 import SideBarComponent from '../components/Sidebar'
 import { createClient } from '@/utils/supabase/server'
+import JobButton from '../components/JobButton'
 
 const DashboardPage = async ({
   children,
@@ -24,9 +25,7 @@ const DashboardPage = async ({
             <h2 className="text--foreground text-3xl">Hello!</h2>
           )}
 
-          <div>
-            <button className="">Add Job Applied!</button>
-          </div>
+          <JobButton />
         </div>
 
         {children}
