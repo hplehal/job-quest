@@ -4,7 +4,7 @@ import { jobApplications } from '@/utils/data/data'
 
 const JobListPage = () => {
   return (
-    <div className="flex">
+    <div className="flex flex-col justify-center items-center  mx-auto ">
       <OverviewComponent />
       <JobListComponent jobApplications={jobApplications} />
     </div>
