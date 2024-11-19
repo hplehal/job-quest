@@ -1,10 +1,9 @@
-'use client'
-import { useState } from 'react'
-
 const FormModalComponent = ({ formData, handleInputChange, handleSubmit }) => {
   return (
     <div>
-      <h2 className="text-xl font-semibold mb-4">Add Job Application</h2>
+      <h2 className="text-xl text-green-teal font-semibold mb-4">
+        Add Job Application
+      </h2>
       <form onSubmit={handleSubmit} className="space-y-4">
         <div>
           <label className="block text-sm font-medium text-gray-700">
@@ -65,7 +64,7 @@ const FormModalComponent = ({ formData, handleInputChange, handleSubmit }) => {
         </div>
         <button
           type="submit"
-          className="w-full py-2 px-4 bg-green-500 text-white rounded-md shadow-sm hover:bg-green-600 focus:outline-none"
+          className="w-full py-2 px-4 bg-green-teal text-clicked-black rounded-md shadow-sm hover:bg-green-600 focus:outline-none"
         >
           Submit
         </button>

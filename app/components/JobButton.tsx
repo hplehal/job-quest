@@ -47,7 +47,7 @@ const JobButton = () => {
         handleSubmit
         handleInputChange
       >
-        <FormModalComponent />
+        <FormModalComponent formData />
       </Modal>
     </div>
   )
