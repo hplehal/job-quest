@@ -2,7 +2,7 @@ const JobListComponent = ({ jobApplications }) => {
   return (
     <div className="p-4">
       <h1 className="text-2xl font-bold mb-4">JobQuest Dashboard</h1>
-      <table className="table-auto w-full border-collapse border border-gray-300">
+      <table className="table-auto w-[calc(90vw-250px)] border-collapse border border-gray-300">
         <thead>
           <tr>
             <th className="border border-gray-300 p-2 bg-gray-100">Company</th>
@@ -13,6 +13,7 @@ const JobListComponent = ({ jobApplications }) => {
             </th>
             <th className="border border-gray-300 p-2 bg-gray-100">Location</th>
             <th className="border border-gray-300 p-2 bg-gray-100">Source</th>
+            <th className="border border-gray-300 p-2 bg-gray-100"> </th>
           </tr>
         </thead>
         <tbody>
@@ -24,20 +25,12 @@ const JobListComponent = ({ jobApplications }) => {
               <td className="border border-gray-300 p-2">{job.dateApplied}</td>
               <td className="border border-gray-300 p-2">{job.location}</td>
               <td className="border border-gray-300 p-2">{job.source}</td>
+              <div className="border border-gray-300 p-2">Edit</div>
             </tr>
           ))}
         </tbody>
       </table>
     </div>
-    // { items.map(item => {
-    //   return(
-
-    //     <div>
-    //       <h1>{item.company}</h1>
-    //       <
-    //     </div>
-    //   )
-    // })}
   )
 }
 
