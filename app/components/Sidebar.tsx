@@ -19,9 +19,12 @@ const SideBarComponent = () => {
         </ul>
       </div>
       <div>
-        <button formAction={signOut} className="cursor-pointer">
-          Log out
-        </button>
+        <Link href={'/'} className="cursor-pointer">
+          <li>Log out</li>
+        </Link>
+        {/* <button formAction={signOut} className="cursor-pointer">
+          Log Out
+        </button> */}
       </div>
     </aside>
   )
